@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive App</title>
+  </head>
+
+  <body class="bg-stone-800 font-sans space-y-5 h-[5000px] ">
+    <!-- Header -->
+    <div id="navi" class="w-full sticky top-0 z-30">
+      <header class="container ">
+        <nav class="text-white h-20 items-center px-8 flex justify-between">
+          <h1 class="font-bold text-yellow-400 text-4xl">Mokito</h1>
+  
+          <!-- Side Bar -->
+          <ul
+            id="sideBar"
+            class="list-none translate-x-full text-black text-lg flex-col p-4 fixed right-0 w-[260px] bg-white h-screen top-0 space-y-2"
+          >
+            <li>
+              <button id="hideSideBar" class="mb-2 active:scale-90">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-10 rounded-full border border-black pointer-events-none"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="text-yellow-400 hover:underline hover:underline-offset-8">
+              Home
+            </li>
+            <li class="hover:underline hover:underline-offset-8">About</li>
+            <li class="hover:underline hover:underline-offset-8">Service</li>
+            <li class="hover:underline hover:underline-offset-8">Projects</li>
+            <li class="hover:underline hover:underline-offset-8">Team</li>
+            <li class="hover:underline hover:underline-offset-8">Contact</li>
+          </ul>
+  
+          <!-- Nav -->
+          <ul id="navi-li" class="list-none flex gap-6">
+            <li class="text-yellow-400 md:block hidden hover:underline hover:underline-offset-8">Home</li>
+            <li class="md:block hidden hover:underline hover:underline-offset-8">About</li>
+            <li class="md:block hidden hover:underline hover:underline-offset-8">Service</li>
+            <li class="md:block hidden hover:underline hover:underline-offset-8">Projects</li>
+            <li class="md:block hidden hover:underline hover:underline-offset-8">Team</li>
+            <li class="md:block hidden hover:underline hover:underline-offset-8">Contact</li>
+            <li class="md:hidden block mt-2">
+              <button id="showSideBar" class="active:scale-90">
+                <svg id="svgBtn"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-10 stroke-white pointer-events-none"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Body -->
+    <section class="container bg-blue-400 min-h-[560px]">
+      <div class="w-full h-full"></div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

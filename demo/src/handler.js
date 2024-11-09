@@ -1,14 +1,14 @@
 import { navi, naviLi, showSideBar, sideBar, svgBtn } from "./selectors";
 
 export const showSideBarHandler = () => {
-  document.body.style.overflow = "hidden";
+  document.body.classList.add('overflow-hidden');
   sideBar.classList.add("duration-300");
   sideBar.classList.remove("translate-x-full");
 };
 
 export const hideSideBarHandler = () => {
   sideBar.classList.add("translate-x-full");
-  document.body.style.overflow = "auto";
+  document.body.classList.remove('overflow-hidden');
 };
 
 export const scrollHandler = () => {

@@ -6,13 +6,13 @@
     <title>Responsive App</title>
   </head>
 
-  <body class="bg-stone-800 font-sans space-y-5 h-[5000px] ">
+  <body class="bg-stone-800 font-sans h-[5000px] space-y-4">
     <!-- Header -->
     <div id="navi" class="w-full sticky top-0 z-30">
-      <header class="container ">
+      <header class="container">
         <nav class="text-white h-20 items-center px-8 flex justify-between">
-          <h1 class="font-bold text-yellow-400 text-4xl">Mokito</h1>
-  
+          <h1 class="font-bold text-yellow-400 text-4xl">Mookito</h1>
+
           <!-- Side Bar -->
           <ul
             id="sideBar"
@@ -36,7 +36,9 @@
                 </svg>
               </button>
             </li>
-            <li class="text-yellow-400 hover:underline hover:underline-offset-8">
+            <li
+              class="text-yellow-400 hover:underline hover:underline-offset-8"
+            >
               Home
             </li>
             <li class="hover:underline hover:underline-offset-8">About</li>
@@ -45,18 +47,43 @@
             <li class="hover:underline hover:underline-offset-8">Team</li>
             <li class="hover:underline hover:underline-offset-8">Contact</li>
           </ul>
-  
+
           <!-- Nav -->
           <ul id="navi-li" class="list-none flex gap-6">
-            <li class="text-yellow-400 md:block hidden hover:underline hover:underline-offset-8">Home</li>
-            <li class="md:block hidden hover:underline hover:underline-offset-8">About</li>
-            <li class="md:block hidden hover:underline hover:underline-offset-8">Service</li>
-            <li class="md:block hidden hover:underline hover:underline-offset-8">Projects</li>
-            <li class="md:block hidden hover:underline hover:underline-offset-8">Team</li>
-            <li class="md:block hidden hover:underline hover:underline-offset-8">Contact</li>
+            <li
+              class="text-yellow-400 md:block hidden hover:underline hover:underline-offset-8"
+            >
+              Home
+            </li>
+            <li
+              class="md:block hidden hover:underline hover:underline-offset-8"
+            >
+              About
+            </li>
+            <li
+              class="md:block hidden hover:underline hover:underline-offset-8"
+            >
+              Service
+            </li>
+            <li
+              class="md:block hidden hover:underline hover:underline-offset-8"
+            >
+              Projects
+            </li>
+            <li
+              class="md:block hidden hover:underline hover:underline-offset-8"
+            >
+              Team
+            </li>
+            <li
+              class="md:block hidden hover:underline hover:underline-offset-8"
+            >
+              Contact
+            </li>
             <li class="md:hidden block mt-2">
               <button id="showSideBar" class="active:scale-90">
-                <svg id="svgBtn"
+                <svg
+                  id="svgBtn"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -78,8 +105,110 @@
     </div>
 
     <!-- Body -->
-    <section class="container bg-blue-400 min-h-[560px]">
-      <div class="w-full h-full"></div>
+    <section class="container">
+      <!-- First div -->
+      <div
+        class="grid lg:grid-cols-2 px-8 py-4 gap-6 items-center justify-center min-h-[660px]"
+      >
+        <!-- Left -->
+        <div class="min-h-[430px]">
+          <!-- About -->
+          <div class="space-y-6 p-4">
+            <h3 class="text-yellow-400 text-[18px] md:text-[22px]">Welcome to our agency</h3>
+            <h1 class="md:text-[65px] text-[42px] leading-[50px] font-info text-slate-200 md:leading-[70px]">
+              We Are Digital Creative Agency
+            </h1>
+            <p class="text-[16px] md:text[22px] text-slate-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              dolores quasi perspiciatis, nesciunt nam corrupti voluptate
+              tenetur at deleniti ut quis inventore ipsam dicta aspernatur
+              pariatur quam perferendis praesentium earum.
+            </p>
+          </div>
+
+          <!-- Contact Buttons -->
+          <div class="p-4 flex justify-start gap-4">
+            <button
+              class="text-white bg-stone-800 flex items-center justify-center px-2 py-1 md:px-4 md:py-2 border-none rounded-full active:scale-90 active:opacity-45 relative after:w-[102%] after:h-[107%] after:absolute after:rounded-full after:bg-gradient-to-br from-yellow-400 to-yellow-400 after:-z-10 hover:z-0 hover:shadow-custom"
+            >
+              Contact Now
+            </button>
+            <button
+              class="rounded-full bg-stone-800 flex items-center justify-center border-none p-2 active:scale-90 active:opacity-45 relative after:w-[102%] after:h-[107%] after:absolute after:rounded-full after:bg-gradient-to-br from-yellow-400 to-yellow-400 after:-z-10 hover:z-0 hover:shadow-custom"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 stroke-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right & Images -->
+        <div class="min-h-[430px]">
+          <div class="flex items-center justify-center relative">
+            <img
+              class="h-[420px] pointer-events-none rounded-full border-4 border-yellow-400 animate-bounce-animation relative z-10 max-sm:absolute sm:left-12 md:left-10"
+              src="./resources/krakenimages-Y5bvRlcCx8k-unsplash.jpg"
+              alt=""
+            />
+
+            <img
+              class="h-[480px] pointer-events-none rounded-full border-4 border-yellow-400 animate-bigger-bounce-animation relative sm:right-8 md:right-16"
+              src="./resources/annie-spratt-MChSQHxGZrQ-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Div -->
+      <div
+        class="min-h-[680px] bg-white grid lg:grid-cols-2 items-center justify-center"
+      >
+        <!-- Left -->
+        <div class="">
+          <div class="">
+            <img class="relative " src="./resources/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="">
+            <img class="relative " src="./resources/headway-5QgIuuBxKwM-unsplash.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div>
+          <div class="p-4 space-y-4">
+            <h3 class="md:text-[20px] text-[18px]  text-yellow-400">
+              We provide best solutions
+            </h3>
+            <h1 class="md:text-[65px] md:leading-[70px] text-[42px] leading-[50px] font-info">
+              We Provide Best Design Solutions
+            </h1>
+            <p class="md:text-[22px] text-[16px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              quisquam vero exercitationem, eligendi, dolor sed, repellendus
+              ratione amet neque obcaecati illo illum voluptates nisi delectus
+              commodi? Deserunt minima similique corrupti.
+            </p>
+          </div>
+          <div class="p-4">
+            <button
+              class="border px-2 py-1 md:px-4 md:py-2 rounded-md border-yellow-400 bg-yellow-400 active:opacity-45 active:scale-90"
+            >
+              Contact Now
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <script type="module" src="/main.js"></script>
   </body>

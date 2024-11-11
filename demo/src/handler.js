@@ -1,4 +1,9 @@
-import { navi, naviLi, sideBar, svgBtn } from "./selectors";
+import {
+  navi,
+  naviLi,
+  sideBar,
+  svgBtn,
+} from "./selectors";
 
 export const showSideBarHandler = () => {
   document.body.classList.add("overflow-hidden");
@@ -12,11 +17,15 @@ export const hideSideBarHandler = () => {
 };
 
 export const scrollHandler = () => {
-
-  if (window.scrollY >= 30) {
+  if (scrollY >= 30) {
     svgBtn.classList.remove("stroke-white");
     svgBtn.classList.add("stroke-stone-700");
-    navi.classList.add("duration-300", "bg-white", "border-b-2", "border-b-yellow-400");
+    navi.classList.add(
+      "duration-300",
+      "bg-white",
+      "border-b-2",
+      "border-b-yellow-400"
+    );
     naviLi.classList.add("text-stone-700");
   } else {
     svgBtn.classList.add("stroke-white");

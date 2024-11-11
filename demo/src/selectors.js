@@ -6,3 +6,4 @@ export const navi = document.querySelector("#navi");
 export const naviLi = document.querySelector("#navi-li");
 
 export const svgBtn = document.querySelector("#svgBtn");
+
